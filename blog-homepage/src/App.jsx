@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import Picture from './Picture'
 import './App.css'
 
 
 
 function App() {
+  
 
   const img1="https://miro.medium.com/v2/1*PIC-U670COEqmGwt4cvXAA.jpeg"
   const img2="blog-homepage/src/wk2Images/img2.png"
@@ -26,7 +28,7 @@ function App() {
       <h1>For You</h1>
      <div><h2>The 7 Habits of Highly Creative People</h2>
       <h3>"What a good artist understand is that nothing comes from nowhere. Nothing is completely original."</h3>
-    <Picture imgSrc={img1} imgAlt={alt1}/></div> 
+    <Picture imgSrc={img1} imgAlt={alt1} /></div> 
     <div>
     <h2>Do Something You Can't Win At</h2>
     <h3>And make it something you love</h3>

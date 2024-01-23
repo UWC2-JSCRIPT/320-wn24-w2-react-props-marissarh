@@ -20,7 +20,8 @@ function App() {
   const alt7="Messy pile of papers"
 
   return (
-    <div className="Picture">Hi class
+    <div className="Blog Page">
+      <h1>For You</h1>
     <Picture imgSrc={img1} imgAlt={alt1}/>
     <Picture imgSrc={img2} imgAlt={alt2}/>
     <Picture imgSrc={img3} imgAlt={alt3}/>

@@ -1,6 +1,4 @@
-import { useState } from 'react';
 import Picture from './Picture';
-import images from'../public';
 import './App.css'
 
 
@@ -8,13 +6,13 @@ import './App.css'
 function App() {
   
 
-  const img1="https://miro.medium.com/v2/1*PIC-U670COEqmGwt4cvXAA.jpeg"
-  const img2="blog-homepage/src/wk2Images/img2.png"
-  const img3="https://miro.medium.com/v2/1*KHs6OgOb7_aJhmQvOKj_dg.jpeg"
-  const img4="https://miro.medium.com/v2/1*_NTwW2r8Konom4d5vIPkuw.png"
-  const img5="https://miro.medium.com/v2/0*oHk6k7XOGuvbgCUH.jpeg"
+  const img1=""
+  const img2=""
+  const img3=""
+  const img4=""
+  const img5=""
   const img6="./images/typewriter.jpg"
-  const img7="blog-homepage/src/wk2Images/img7.jpg";
+  const img7="";
 
   const alt1="Person painting"
   const alt2="Swings in front of graffiti wall"
@@ -25,7 +23,7 @@ function App() {
   const alt7="Messy pile of papers"
   
   return (
-    
+    <>
     <div className="Blog Page">
       <h1>For You</h1>
      <h2>The 7 Habits of Highly Creative People</h2>
@@ -53,7 +51,7 @@ function App() {
     <Picture imgSrc={img7} imgAlt={alt7} />
     <h2>Useful Tools for Writers</h2>
     </div>
-    
+    </>
   )
 
   }

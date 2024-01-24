@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import Picture from './Picture'
+import Picture from './Picture';
+import images from'../public';
 import './App.css'
 
 
@@ -12,8 +13,8 @@ function App() {
   const img3="https://miro.medium.com/v2/1*KHs6OgOb7_aJhmQvOKj_dg.jpeg"
   const img4="https://miro.medium.com/v2/1*_NTwW2r8Konom4d5vIPkuw.png"
   const img5="https://miro.medium.com/v2/0*oHk6k7XOGuvbgCUH.jpeg"
-  const img6="https://miro.medium.com/v2/0*PO_h-CgPjUqxFB0i"
-  const img7="blog-homepage/src/wk2Images/img7.jpg"
+  const img6="./images/typewriter.jpg"
+  const img7="blog-homepage/src/wk2Images/img7.jpg";
 
   const alt1="Person painting"
   const alt2="Swings in front of graffiti wall"

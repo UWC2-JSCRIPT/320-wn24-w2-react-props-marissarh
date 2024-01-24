@@ -1,22 +1,22 @@
 import Picture from './Picture';
+import App from './App';
 import './App.css'
 
 
-function Article(){
+function Article({ artTitle,artDescr, authPic, auth, artDate, artLength, artSection}){
 
     return(
     <>
-<div className="Blog-Page">
-    <sec sec={artSection}/>
-    <auth author={auth}/>
-    <article artTitle={articleTitle}/>
-    <artlength articleLength= {artLength}/>
-    <artdescr artdescr={articleDescr}/>
-    <authpic authPic={authorPicture} />
-    <artdate artDate = {articleDate}/>
-  </div>
+        <sec sec={artSection}/>
+        <auth author={auth}/>
+        <article artTitle={artTitle}/>
+        <artlength articleLength= {artLength}/>
+        <artdescr articleDescr={artDescr}/>
+        <authpic authPic={authPic} />
+        <artdate artDate = {artDate}/>
+        </>
 
-    </>
+    
     )
 }
 

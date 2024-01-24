@@ -1,27 +1,39 @@
-import Picture from './Picture';
-import App from './App';
+import Picture from './Picture'
+import App from './App'
+
 import './App.css'
 
+function Articles(){
+
+const img0="./images/painting.webp";
+const img1="./images/graffiti.avif";
 
 
+const alt0="Person painting";
+const alt1= "Swings in front of graffiti wall"
+return(
+  <>
+  <Picture imgSrc={img0} imgAlt={alt0}/>
+  <Picture imgSrc={img1} imgAlt={alt1}/>
+
+</>
+)}
 
 const articles=[
     {
       id: 0,
-      img: "./images/painting.webp",
-      imgAlt: "Person painting",
       title:'The 7 Habits of Highly Creative People',
       descrip:'What a good artist understand is that nothing comes from nowhere. Nothing is completely original.',
       authPic:"./images/LouisChew.jpg",
       author: 'Louis Chew',
       length:'8 min read',
       date:'Apr 4',
+      
   
     },
   {
     id:1,
-    img1:"./images/graffiti.avif",
-    imgAlt: "Swings in front of graffiti wall",
+    
     title:`Do Something You Can't Win At`,
     authPic:"./images/KrisGage.png",
     descrip:'And make it something you love',
@@ -81,24 +93,7 @@ const articles=[
     date:'Apr 21',
   
   }]
-  /*return(
-    <>
-    <ul>{Article}</ul>
-    </>
-  );
-
-    return(
-    <>
-        <sec sec={artSection}/>
-        <auth author={auth}/>
-        <article artTitle={artTitle}/>
-        <artlength articleLength= {artLength}/>
-        <artdescr articleDescr={artDescr}/>
-        <authpic authPic={authPic} />
-        <artdate artDate = {artDate}/>
-        </>
-    )
-}*/
+ 
 
 
 

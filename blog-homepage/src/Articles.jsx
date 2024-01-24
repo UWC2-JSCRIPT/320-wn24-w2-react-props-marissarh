@@ -1,64 +1,65 @@
-
+import Picture from './Picture';
 import App from './App';
 import './App.css'
 
+function Articles(){
 
 
-export const article=[
+const articles=[
     {
       id: 0,
-      image: "./images/painting.webp",
-      imageAlt: "Person painting",
-      Title:'The 7 Habits of Highly Creative People',
-      Descr:'What a good artist understand is that nothing comes from nowhere. Nothing is completely original.',
+      img0: "./images/painting.webp",
+      imageAlt : "Person painting",
+      title:'The 7 Habits of Highly Creative People',
+      descrip:'What a good artist understand is that nothing comes from nowhere. Nothing is completely original.',
       authPic:"./images/LouisChew.jpg",
       author: 'Louis Chew',
-      Length:'8 min read',
-      Date:'Apr 4',
+      length:'8 min read',
+      date:'Apr 4',
   
     },
   {
     id:1,
     img1:"./images/graffiti.avif",
     imageAlt: "Swings in front of graffiti wall",
-    Title:`Do Something You Can't Win At`,
+    title:`Do Something You Can't Win At`,
     authPic:"./images/KrisGage.png",
-    Descr:'And make it something you love',
+    descrip:'And make it something you love',
     author:'Kris Gage',
-    Length:'3 min read',
-    Date:'Mar 30',
+    length:'3 min read',
+    date:'Mar 30',
   },{
     id:2,
     img2:"./images/electricChart.jpg",
     imageAlt: "Electric Literature's Auto-Publicist",
-    Title:`This Handy Chart Automatically Generates a Pitch for Your New Novel`,
-    Descr:'Feeling stuck? We help you skip the writing and go traight to the press release',
+    title:`This Handy Chart Automatically Generates a Pitch for Your New Novel`,
+    descrip:'Feeling stuck? We help you skip the writing and go traight to the press release',
     authPic:"./images/electricLiterature.jpg",
     author:'Electric Literature',
-    Length:'2 min read',
-    Date:'Mar 28',
+    length:'2 min read',
+    date:'Mar 28',
   },
   {
     id:3,
     img3:"./images/paddleBall.png",
-    Title:`Art as a Second Language`,
+    title:`Art as a Second Language`,
     imageAlt: "Sketch of a woman playing paddle-ball",
-    Descr:'Drawing is a translation of all my voices and words — an attempt to draw nothing',
+    descrip:'Drawing is a translation of all my voices and words — an attempt to draw nothing',
     authPic:"./images/RomanMuradov.png",
     author:'Roman Muradov',
-    Length:'6 min read',
-    Date:'Mar 27',
+    length:'6 min read',
+    date:'Mar 27',
   },
   {
     id:4,
     img4:"./images/blackSmudge.jpg",
     imageAlt: "Three rows of black smudges",
-    Title:`What Would Happen If You Did These Things Every Day...`,
-    Descr:'For thirty days...',
+    title:`What Would Happen If You Did These Things Every Day...`,
+    descrip:'For thirty days...',
     authPic:"./images/AlexMathers.jpg",
     author:'Alex Mathers',
-    Length:'3 min read',
-    Date:'Apr 22',
+    length:'3 min read',
+    date:'Apr 22',
   },
   {
     id:5,
@@ -73,19 +74,18 @@ export const article=[
   {id:6,
     img7:"./images/papers.jpg",
     imageAlt: "Messy pile of papers",
-    Title:`Useful Tools for Writers`,
-    Descr:'Jumpstart you process.',
+    title:`Useful Tools for Writers`,
+    descrip:'Jumpstart you process.',
     author:'JLRose',
-    Length:'8 min read',
-    Date:'Apr 21',
+    length:'8 min read',
+    date:'Apr 21',
   
-  }]
+  }]}
   /*return(
     <>
     <ul>{Article}</ul>
     </>
   );
-function Article({ artTitle,artDescr, authPic, auth, artDate, artLength, artSection}){
 
     return(
     <>
@@ -100,4 +100,6 @@ function Article({ artTitle,artDescr, authPic, auth, artDate, artLength, artSect
     )
 }*/
 
-export default Article
+
+
+export default articles

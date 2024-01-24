@@ -1,29 +1,34 @@
 body{
   background-color: white;
   color: black;
-  display: inline-grid;
+  display: inline-grid center;
   zoom: 80%;
+
 }
 h1{
-  border-bottom: 2px solid rgb(196, 192, 192);
+  border-bottom: 2px solid rgb(102, 98, 98);
   font-size: 10px;
+  
 }
 h2{
   display: inline;
-  font-size: 18px;
+  font-size: 20px;
+  
 }
 h3{
   font-weight: 400;
-  font-size: 13px;
-}
+  font-size: 1em;
+  
 
+}
 .card{
   box-sizing: content-box;
-  width: 40%;
+  width: 30%;
   height: 300px;
   border: 1px solid gray;
   margin: 20px;
-  padding: 20px 20px;
+  padding: 20px 30px;
+  display: grid;
   display: inline-block 
 }
 
@@ -32,6 +37,13 @@ h3{
   float: right;
   width: 30%;
   text-align: justify;
+  display: grid;
+
+  
+    
+    
+  
+  
    
   
 }
@@ -41,5 +53,8 @@ h3{
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 1px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-auto-rows: 200px;
   
 }

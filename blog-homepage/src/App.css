@@ -1,4 +1,45 @@
-#article1{
-  border: thin;
-  border-color: black;
+body{
+  background-color: white;
+  color: black;
+  display: inline-grid;
+  zoom: 80%;
+}
+h1{
+  border-bottom: 2px solid rgb(196, 192, 192);
+  font-size: 10px;
+}
+h2{
+  display: inline;
+  font-size: 18px;
+}
+h3{
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.card{
+  box-sizing: content-box;
+  width: 40%;
+  height: 300px;
+  border: 1px solid gray;
+  margin: 20px;
+  padding: 20px 20px;
+  display: inline-block 
+}
+
+.container{
+  padding: 2px 30px 20px 5px;
+  float: right;
+  width: 30%;
+  text-align: justify;
+   
+  
+}
+.articles{
+  text-align:start;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1px;
+  
 }

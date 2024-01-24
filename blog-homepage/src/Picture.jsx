@@ -5,7 +5,7 @@ function Picture(imgSrc, imgAlt){
     
     return(
         <div className='images'>images
-        <img src="/images/typewriter.jpg" alt={imgAlt}></img>
+        <img src={props.imgSrc} alt={props.imgAlt}/>
         </div>
     )
 }

@@ -2,14 +2,14 @@ import Picture from './Picture';
 import App from './App';
 import './App.css'
 
-function Articles(){
+
 
 
 const articles=[
     {
       id: 0,
-      img0: "./images/painting.webp",
-      imageAlt : "Person painting",
+      img: "./images/painting.webp",
+      imgAlt: "Person painting",
       title:'The 7 Habits of Highly Creative People',
       descrip:'What a good artist understand is that nothing comes from nowhere. Nothing is completely original.',
       authPic:"./images/LouisChew.jpg",
@@ -21,7 +21,7 @@ const articles=[
   {
     id:1,
     img1:"./images/graffiti.avif",
-    imageAlt: "Swings in front of graffiti wall",
+    imgAlt: "Swings in front of graffiti wall",
     title:`Do Something You Can't Win At`,
     authPic:"./images/KrisGage.png",
     descrip:'And make it something you love',
@@ -31,7 +31,7 @@ const articles=[
   },{
     id:2,
     img2:"./images/electricChart.jpg",
-    imageAlt: "Electric Literature's Auto-Publicist",
+    imgAlt: "Electric Literature's Auto-Publicist",
     title:`This Handy Chart Automatically Generates a Pitch for Your New Novel`,
     descrip:'Feeling stuck? We help you skip the writing and go traight to the press release',
     authPic:"./images/electricLiterature.jpg",
@@ -43,7 +43,7 @@ const articles=[
     id:3,
     img3:"./images/paddleBall.png",
     title:`Art as a Second Language`,
-    imageAlt: "Sketch of a woman playing paddle-ball",
+    imgAlt: "Sketch of a woman playing paddle-ball",
     descrip:'Drawing is a translation of all my voices and words — an attempt to draw nothing',
     authPic:"./images/RomanMuradov.png",
     author:'Roman Muradov',
@@ -53,7 +53,7 @@ const articles=[
   {
     id:4,
     img4:"./images/blackSmudge.jpg",
-    imageAlt: "Three rows of black smudges",
+    imgAlt: "Three rows of black smudges",
     title:`What Would Happen If You Did These Things Every Day...`,
     descrip:'For thirty days...',
     authPic:"./images/AlexMathers.jpg",
@@ -64,7 +64,7 @@ const articles=[
   {
     id:5,
     img5:"./images/typewriter.jpg",
-    imageAlt: "A red typewriter",
+    imgAlt: "A red typewriter",
     Title:'10 Strategies for Creating Viral and Powerful Content',
     authPic:"./images/ZdravkoCivjetic.jpg",
     author:'Zdravko Cvijetic',
@@ -73,14 +73,14 @@ const articles=[
   },
   {id:6,
     img7:"./images/papers.jpg",
-    imageAlt: "Messy pile of papers",
+    imgAlt: "Messy pile of papers",
     title:`Useful Tools for Writers`,
     descrip:'Jumpstart you process.',
     author:'JLRose',
     length:'8 min read',
     date:'Apr 21',
   
-  }]}
+  }]
   /*return(
     <>
     <ul>{Article}</ul>

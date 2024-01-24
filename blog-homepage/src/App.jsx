@@ -4,18 +4,16 @@ import './App.css'
 
 
   
- function App(){
+ export default function App(){
 
-  const img0= "./images/painting.webp"
-  const alt0 = "Person painting"
-  const articleList = articles.map(article => <p key={article.id}> <p>{article.title}</p><p>{article.image}</p><span>{article.descrip}</span></p>);
+  
+  const articleList = articles.map(article => <p key={article.id}><h2>{article.title}</h2><h3>{article.descrip}</h3></p>);
     return (
-      <div>
-      < Picture imgSrc={img0} imgAlt={alt0}/>
-      </div>
-     
-      
-    )
+      <article>
+    <h1>For you</h1>
+    <p>{articleList}</p>
+      </article>
+    );
 }
 
 /*const sec1="For You"
@@ -24,4 +22,3 @@ const sec3 = "bookmark"
 const sec4= "Audio available"*/
 
 
-export default App;

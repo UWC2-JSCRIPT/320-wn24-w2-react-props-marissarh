@@ -1,5 +1,5 @@
-import App from './App'
-import Articles from './Articles';
+
+
 import Picture from './Picture'
 
 import './App.css'

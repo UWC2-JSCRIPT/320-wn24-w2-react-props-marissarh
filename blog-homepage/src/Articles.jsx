@@ -1,6 +1,6 @@
-import Picture from './Picture'
-import App from './App'
-import Images from './Images'
+
+
+
 import './App.css'
 
 

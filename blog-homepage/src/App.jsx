@@ -1,4 +1,3 @@
-import Picture from './Picture'
 import  articles from './Articles'
 import './App.css'
 
@@ -17,12 +16,13 @@ import './App.css'
     <h3>{sec2}</h3>
       </article>
 
+
     );
 }
 
 const sec1="For You"
 const sec2="In case you missed it"
-const sec3 = "bookmark"
-const sec4= "Audio available"
+/*const sec3 = "bookmark"
+const sec4= "Audio available"*/
 
 

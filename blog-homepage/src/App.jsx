@@ -7,13 +7,13 @@ import './App.css'
  export default function App(){
 
   
-  const articleList = articles.map(article => <p key={article.id}><h2>{article.title}</h2><h3>{article.descrip}</h3></p>);
+  const articleList = articles.map(article => 
+  <p className='card'key={article.id}><h2>{article.title}</h2><h3>{article.descrip}</h3></p>);
     return (
       
-      <article>
-        
+      <article >  
     <h1>{sec1}</h1>
-    <p>{articleList}</p>
+    <p className='container'>{articleList}</p>
     <h3>{sec2}</h3>
       </article>
 

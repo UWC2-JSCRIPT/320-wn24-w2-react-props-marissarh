@@ -1,10 +1,7 @@
-
-
-
 import './App.css'
 
 
-
+function RenderinArrayOfObjects(){
 const Articles=[
     {
       id: 0,
@@ -70,7 +67,7 @@ const Articles=[
   
   }]
  
-
+};
 
 
 export default Articles

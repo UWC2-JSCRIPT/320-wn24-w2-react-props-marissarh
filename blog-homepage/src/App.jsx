@@ -1,5 +1,6 @@
 import  articles from './Articles'
 import './App.css'
+import Images from './Images'
 
 
   
@@ -9,13 +10,14 @@ import './App.css'
   const articleList = articles.map(article => 
   <p className='card'key={article.id}><h2>{article.title}</h2><h3>{article.descrip}</h3></p>);
     return (
-      
+      <>
+      <images/>
       <article >  
     <h1>{sec1}</h1>
-    <p className='container'>{articleList}</p>
+    <p className='container'>{articleList} </p>
     <h3>{sec2}</h3>
       </article>
-
+      </>
 
     );
 }

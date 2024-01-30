@@ -12,7 +12,8 @@ import Images from './Images'
     return (
       <>
       <images/>
-      <article >  
+  
+   <article >  
     <h1>{sec1}</h1>
     <p className='container'>{articleList} </p>
     <h3>{sec2}</h3>

@@ -5,9 +5,6 @@ import BottomImages from './Components/BottomImages';
 import './index.css';
 import BottomArticles from './Components/BottomArticles';
 
- 
-
-
  const App = () => {
    return (
     <div>
@@ -21,9 +18,7 @@ import BottomArticles from './Components/BottomArticles';
       <h1 className='pt-8 text-xl'>In case you missed it</h1>
       <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
       <BottomImages />
-      <BottomArticles  />
-      
-      
+      <BottomArticles />
       </div>
      </div>
    )

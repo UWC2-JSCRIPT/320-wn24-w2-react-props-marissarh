@@ -1,4 +1,7 @@
 import React from 'react'
+import Picture from '../Picture'
+import { GoBookmark } from "react-icons/go";
+
 
 const bArticles = [
     {
@@ -39,6 +42,7 @@ const bArticles = [
               <div className='grid grid-cols-5 gap-4'> 
               <h4 className='text-slate-500 '>{articles.date}</h4>
               <h4 className='text-slate-500 '>{articles.length}</h4>
+              <GoBookmark />
               </div>
               
               </li>

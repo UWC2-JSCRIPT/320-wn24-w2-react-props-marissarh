@@ -6,6 +6,7 @@ import './index.css';
 import BottomArticles from './Components/BottomArticles';
 
  
+const bookmark= "./images/bookmark.png"
 
  const App = () => {
    return (

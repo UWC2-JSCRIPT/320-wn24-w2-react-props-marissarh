@@ -1,5 +1,7 @@
 import React from 'react'
 import Images from './Images'
+import { GoBookmark } from "react-icons/go";
+
 
 const mArticles = [
 
@@ -40,6 +42,7 @@ const mArticles = [
     author:'Roman Muradov',
     length:'6 min read',
     date:'Mar 27',
+    
   }]
   function MainArticles(){
     const mArticlesArray = mArticles.map(article =>
@@ -49,9 +52,10 @@ const mArticles = [
           {/*<p>{articles.authPic}</p>*/}
           <br />
           <h3>{article.author}</h3>
-          <div className='grid grid-cols-5 gap-4'> 
+          <div className='grid grid-cols-6 gap-5'> 
           <h4 className='text-slate-500  '>{article.length}</h4>
           <h4 className='text-slate-500  '>{article.date}</h4>
+          <GoBookmark />
           </div>
           </li>
     )

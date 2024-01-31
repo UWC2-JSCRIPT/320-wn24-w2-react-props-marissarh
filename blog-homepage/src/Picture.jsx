@@ -5,7 +5,7 @@ function Picture({ imgSrc, imgAlt}){
     
     return(
         
-        <img src={imgSrc} width={250} height={250} alt={imgAlt}/>
+        <img src={imgSrc}  alt={imgAlt} width={250} height={250}/>
 
     )
 }

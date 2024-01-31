@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BottomArticles = () => {[
+const bArticles = [
     {
         id:4,
         title:`What Would Happen If You Did These Things Every Day...`,
@@ -15,8 +15,8 @@ const BottomArticles = () => {[
         title:'10 Strategies for Creating Viral and Powerful Content',
         authPic:"./images/ZdravkoCivjetic.jpg",
         author:'Zdravko Cvijetic',
-        Length:'6 min read',
-        Date:'Apr 22'
+        length:'6 min read',
+        date:'Apr 22'
       },
       {id:6,
         title:`Useful Tools for Writers`,
@@ -26,11 +26,30 @@ const BottomArticles = () => {[
         date:'Apr 21',
       
       }]
+
+      function BottomArticles(){
+        const bArticlesArray = bArticles.map(articles =>
+            <li key={articles.id}>
+              <h2 className='font-bold'>{articles.title}</h2>
+              <p className='text-slate-500'>{articles.descrip}</p>
+              {/*<p>{articles.authPic}</p>*/}
+              <br />
+              <h3>{articles.author}</h3>
+              <div className='grid grid-cols-5 gap-4'> 
+              <h4 className='text-slate-500 '>{articles.date}</h4>
+              <h4 className='text-slate-500 '>{articles.length}</h4>
+              </div>
+              </li>
+        )
+    
   return (
     <>
-    <BottomArticles />
+    <ul className='col-start-1 col-end-3 grid grid-cols-3 gap-4 pt-8 mb-10'> {bArticlesArray}</ul>
     </>
+   
   )
+  
 }
+
 
 export default BottomArticles

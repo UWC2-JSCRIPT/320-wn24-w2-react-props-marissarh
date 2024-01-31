@@ -1,6 +1,7 @@
 import React from 'react'
+import Images from './Images'
 
-const MainArticles = () => {[
+const mArticles = [
 
     {
       id: 0,
@@ -40,13 +41,29 @@ const MainArticles = () => {[
     length:'6 min read',
     date:'Mar 27',
   }]
-  return(
-    <>
-    <MainArticles />
-    </>
-  )
- 
-};
+  function MainArticles(){
+    const mArticlesArray = mArticles.map(article =>
+        <li key={article.id}>
+          <h2 className='font-bold'>{article.title}</h2>
+          <p className='text-slate-500'>{article.descrip}</p>
+          {/*<p>{articles.authPic}</p>*/}
+          <br />
+          <h3>{article.author}</h3>
+          <div className='grid grid-cols-5 gap-4'> 
+          <h4 className='text-slate-500  '>{article.length}</h4>
+          <h4 className='text-slate-500  '>{article.date}</h4>
+          </div>
+          </li>
+    )
+
+return (
+<>
+<ul className='grid grid-cols-2 gap-4 pt-10 '> {mArticlesArray}</ul>
+</>
+
+)
+
+}
 
 
 export default MainArticles

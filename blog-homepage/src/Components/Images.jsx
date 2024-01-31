@@ -1,5 +1,7 @@
 import React from 'react'
 import Picture from '../Picture'
+import MainArticles from './MainArticles'
+
 
 
 function Images(){
@@ -24,8 +26,8 @@ function Images(){
 
     return(
       <div className='grid grid-cols-2 gap-4 pt-10 '>
-      <Picture imgSrc={img0} imgAlt={alt0}/>
-      <Picture imgSrc={img2} imgAlt={alt2}/>
+      <Picture className='' imgSrc={img0} imgAlt={alt0}/>
+      <Picture className='object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg'imgSrc={img2} imgAlt={alt2}/>
       <Picture imgSrc={img1} imgAlt={alt1}/>
       <Picture imgSrc={img3} imgAlt={alt3}/>
       <div className='col-start-1 col-end-3 grid grid-cols-3 gap-4 pt-8'>

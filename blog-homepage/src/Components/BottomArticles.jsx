@@ -1,7 +1,5 @@
 import React from 'react'
-import Picture from '../Picture'
 import { GoBookmark } from "react-icons/go";
-
 
 const bArticles = [
     {
@@ -56,6 +54,5 @@ const bArticles = [
   )
   
 }
-
 
 export default BottomArticles

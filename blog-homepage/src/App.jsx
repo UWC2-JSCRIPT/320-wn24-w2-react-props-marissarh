@@ -6,7 +6,7 @@ import './index.css';
 import BottomArticles from './Components/BottomArticles';
 
  
-const bookmark= "./images/bookmark.png"
+
 
  const App = () => {
    return (
@@ -16,14 +16,14 @@ const bookmark= "./images/bookmark.png"
       <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
       <div className='content-center'>
       </div>
-      <MainArticles className=''/>
+      <MainArticles />
       <Images />
       <h1 className='pt-8 text-xl'>In case you missed it</h1>
       <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-      <span className=''>
       <BottomImages />
       <BottomArticles  />
-      </span>
+      
+      
       </div>
      </div>
    )

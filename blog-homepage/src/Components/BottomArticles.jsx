@@ -30,7 +30,7 @@ const bArticles = [
 
       function BottomArticles(){
         const bArticlesArray = bArticles.map(articles =>
-            <li className=' ' key={articles.id}>
+            <li className='border border-grey ' key={articles.id}>
               <h2 className='font-bold'>{articles.title}</h2>
               <p className='text-slate-500'>{articles.descrip}</p>
               {/*<p>{articles.authPic}</p>*/}

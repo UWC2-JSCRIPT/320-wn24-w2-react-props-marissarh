@@ -14,7 +14,7 @@ function Images(){
     const alt3= "Sketch of a woman playing paddle-ball";
 
     return(
-      <div className='grid grid-cols-2 gap-4 pt-10 border border-grey'>
+      <div className='grid grid-cols-2 gap-4 pt-10 '>
       <Picture imgSrc={img0} imgAlt={alt0} />
       <Picture className='object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg'imgSrc={img2} imgAlt={alt2} />
       <Picture imgSrc={img1} imgAlt={alt1} />

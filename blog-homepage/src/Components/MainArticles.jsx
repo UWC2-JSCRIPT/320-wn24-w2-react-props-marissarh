@@ -2,6 +2,7 @@ import React from 'react'
 import Images from './Images'
 import Picture from '../Picture';
 import { GoBookmark } from "react-icons/go";
+import AuthorPic from './AuthorPic';
 
 const mArticles = [
 
@@ -49,7 +50,7 @@ const mArticles = [
         <li className='border border-grey ' key={article.id}>
           <h2 className='font-bold'>{article.title}</h2>
           <p className='text-slate-500'>{article.descrip}</p>
-          <Picture imgSrc={id.authPic} />
+          
           <br />
           <h3>{article.author}</h3>
           <div className='grid grid-cols-6 gap-5'> 

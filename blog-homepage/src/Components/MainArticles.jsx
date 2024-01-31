@@ -43,7 +43,7 @@ const mArticles = [
   }]
   function MainArticles(){
     const mArticlesArray = mArticles.map(article =>
-        <li key={article.id}>
+        <li className='border border-grey ' key={article.id}>
           <h2 className='font-bold'>{article.title}</h2>
           <p className='text-slate-500'>{article.descrip}</p>
           {/*<p>{articles.authPic}</p>*/}

@@ -17,10 +17,12 @@ import BottomArticles from './Components/BottomArticles';
       </div>
       <MainArticles className=''/>
       <Images />
-      
       <h1 className='pt-8 text-xl'>In case you missed it</h1>
+      <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+      <span className=''>
       <BottomImages />
-      <BottomArticles />
+      <BottomArticles  />
+      </span>
       </div>
      </div>
    )

@@ -1,6 +1,7 @@
 import React from 'react';
 import MainArticles from './Components/MainArticles';
 import Images from './Components/Images';
+import BottomImages from './Components/BottomImages';
 import './index.css';
 import BottomArticles from './Components/BottomArticles';
 
@@ -16,7 +17,9 @@ import BottomArticles from './Components/BottomArticles';
       </div>
       <MainArticles className=''/>
       <Images />
-      <h1>In case you missed it</h1>
+      
+      <h1 className='pt-8 text-xl'>In case you missed it</h1>
+      <BottomImages />
       <BottomArticles />
       </div>
      </div>

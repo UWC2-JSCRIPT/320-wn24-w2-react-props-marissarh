@@ -1,27 +1,26 @@
-import  articles from './Articles'
-import './App.css'
-import Images from './Images'
+import React from 'react';
+import  MainArticles from './Components/MainArticles';
+import BottomArticles from './Components/BottomArticles';
+import Images from './Components/Images';
+import './index.css';
 
-
-  
- export default function App(){
-
-  
-  const articleList = articles.map(article => 
-  <p className='card'key={article.id}><h2>{article.title}</h2><h3>{article.descrip}</h3></p>);
-    return (
-      <>
-      <images/>
-  
-   <article >  
-    <h1>{sec1}</h1>
-    <p className='container'>{articleList} </p>
-    <h3>{sec2}</h3>
-      </article>
-      </>
-
-    );
-}
+ 
+ const App = () => {
+   return (
+     <div className='ml-20'>
+      <h1 className='mt-8  text-2xl underline underline-offset-8'>For you</h1>
+      <div className='content-center'>
+      <Images className=''/>
+      <MainArticles />
+      <BottomArticles />
+      </div>
+     </div>
+   )
+ }
+ 
+ export default App
+      
+    
 
 const sec1="For You"
 const sec2="In case you missed it"

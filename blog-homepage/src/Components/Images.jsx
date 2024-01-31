@@ -1,8 +1,6 @@
+import React from 'react'
+import Picture from '../Picture'
 
-
-import Picture from './Picture'
-
-import './App.css'
 
 function Images(){
 
@@ -25,14 +23,16 @@ function Images(){
     const alt6= "Messy pile of papers";
 
     return(
-      <div>
+      <div className='grid grid-cols-2 gap-4 pt-10 '>
       <Picture imgSrc={img0} imgAlt={alt0}/>
-      <Picture imgSrc={img1} imgAlt={alt1}/>
       <Picture imgSrc={img2} imgAlt={alt2}/>
+      <Picture imgSrc={img1} imgAlt={alt1}/>
       <Picture imgSrc={img3} imgAlt={alt3}/>
+      <div className='col-start-1 col-end-3 grid grid-cols-3 gap-4 pt-8'>
       <Picture imgSrc={img4} imgAlt={alt4}/>
       <Picture imgSrc={img5} imgAlt={alt5}/>
       <Picture imgSrc={img6} imgAlt={alt6}/>
+      </div>
       
     
     </div>

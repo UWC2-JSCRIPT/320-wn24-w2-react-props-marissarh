@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Images from './Images'
 import Picture from '../Picture';
 import { GoBookmark } from "react-icons/go";
 import AuthorPic from './AuthorPic';
 
-const mArticles = [
-
-    {
+const mainArticles = () =>{
+  const [upperArticles, setUpperArticles] = useState([]);
+  useEffect(()=>{
+    const articles =[{
       id: 0,
       title:'The 7 Habits of Highly Creative People',
       descrip:'What a good artist understand is that nothing comes from nowhere. Nothing is completely original.',
@@ -42,10 +43,30 @@ const mArticles = [
     authPic:"./images/RomanMuradov.png",
     author:'Roman Muradov',
     length:'6 min read',
-    date:'Mar 27',
-    
-  }]
-  function MainArticles(){
+    date:'Mar 27',}
+  ];
+  setUpperArticles(articles);
+  }, [])
+
+return (
+  <div>
+    <h1> For You</h1>
+    <ul>
+      {upperArticles.map(upperArticle =>(
+        <li key={upperArticle.id}>
+          <Link to={`/upperArtile/${upperArticle.id}`}>
+            <h2>{upperArticle.title}</h2>
+          </Link>
+          <p>{upperArticle.descrip}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
+      };
+      export default mainArticles
+      
+  {/*function MainArticles(){
     const mArticlesArray = mArticles.map(article =>
         <li className='border border-grey ' key={article.id}>
           <h2 className='font-bold'>{article.title}</h2>
@@ -68,7 +89,6 @@ return (
 
 )
 
-}
+}*/}
 
 
-export default MainArticles

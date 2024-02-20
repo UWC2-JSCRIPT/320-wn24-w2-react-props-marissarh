@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react'
-import Images from './Images'
-import Picture from '../Picture';
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+import Images from './Images';
+import Picture from '../Content';
 import { GoBookmark } from "react-icons/go";
 import AuthorPic from './AuthorPic';
 
@@ -9,17 +10,24 @@ const mainArticles = () =>{
   useEffect(()=>{
     const articles =[{
       id: 0,
-      title:'The 7 Habits of Highly Creative People',
+      article:{
+        articlePicture: './images/painting.webp'},
+        title:'The 7 Habits of Highly Creative People',
       descrip:'What a good artist understand is that nothing comes from nowhere. Nothing is completely original.',
       authPic:"./images/LouisChew.jpg",
-      author: 'Louis Chew',
+      author: {
+        name:'Louis Chew',
+        picture:"./images/LouisChew.jpg",},
       length:'8 min read',
       date:'Apr 4',
   
     },
   {
     id:1,
+    article:{
+      articlePicture:'./images/graffiti.avif',
     title:`Do Something You Can't Win At`,
+    },
     authPic:"./images/KrisGage.png",
     descrip:'And make it something you love',
     author:'Kris Gage',

@@ -1,8 +1,6 @@
 import {React,Routes, Route} from 'react';
 import Content from './Content';
-import BottomImages from './Components/BottomImages';
 import './index.css';
-import BottomArticles from './Components/BottomArticles';
 import Homepage from './Components/Homepage';
 
  const App = () => {
@@ -11,7 +9,6 @@ import Homepage from './Components/Homepage';
       <Routes>
         <Route exact path="/" component={Homepage}/>
         <Route path="/article/:id" component={Content}/>
-      
       </Routes>
      
       </div>

@@ -6,9 +6,9 @@ import { GoBookmark } from "react-icons/go";
 import AuthorPic from './AuthorPic';
 
 const Homepage = () =>{
-  const [upperArticles, setUpperArticles] = useState([]);
+  const [homepageArticles, setHomepageArticles] = useState([]);
   useEffect(()=>{
-    const articles =[{
+    const blogArticles =[{
       id: 0,
       article:{
         articlePicture: './images/painting.webp'},
@@ -20,6 +20,7 @@ const Homepage = () =>{
         picture:"./images/LouisChew.jpg",},
       length:'8 min read',
       date:'Apr 4',
+      category: 'For You',
   
     },
   {
@@ -34,6 +35,7 @@ const Homepage = () =>{
     descrip:'And make it something you love',
     length:'3 min read',
     date:'Mar 30',
+    category: 'For You',
   },
   {
     id:2,
@@ -46,6 +48,7 @@ const Homepage = () =>{
       authPic:"./images/electricLiterature.jpg",},
     length:'2 min read',
     date:'Mar 28',
+    category: 'For You',
   },
   {
     id:3,
@@ -57,21 +60,59 @@ const Homepage = () =>{
       author:'Roman Muradov',
       authPic:"./images/RomanMuradov.png",},
     length:'6 min read',
-    date:'Mar 27',}
+    date:'Mar 27',
+    category: 'For You',
+  },{
+    id:4,
+    article:{
+      articlePicture:'./images/blackSmudge.jpg',
+      title:`What Would Happen If You Did These Things Every Day...`,},
+    descrip:'For thirty days...',
+    author:{
+      author:'Alex Mathers', 
+      authPic:"./images/AlexMathers.jpg",},
+    length:'3 min read',    
+    date:'Apr 22',  
+    category: 'In Case You Missed It',   
+  },{
+    id:5,
+    article:{
+      articlePicture: './images/typewriter.jpg',
+      title:'10 Strategies for Creating Viral and Powerful Content',},
+    author:{
+        author:'Zdravko Cvijetic',
+        authPic:"./images/ZdravkoCivjetic.jpg",},
+    length:'6 min read',
+    date:'Apr 22',
+    category: 'In Case You Missed It',  
+  },{
+    id:6,
+    article:{
+      articlePicture:'./images/papers.jpg',
+      title:`Useful Tools for Writers`,
+    },
+    descrip:'Jumpstart you process.',
+    author:{
+      author:'JLRose',
+    },
+    length:'8 min read',
+    date:'Apr 21',
+    category: 'In Case You Missed It', 
+  }
   ];
-  setUpperArticles(articles);
+  setHomepageArticles(blogArticles);
   }, [])
 
 return (
   <div>
     <h1> For You</h1>
     <ul>
-      {upperArticles.map(upperArticle =>(
-        <li key={upperArticle.id}>
-          <Link to={`/upperArtile/${upperArticle.id}`}>
-            <h2>{upperArticle.title}</h2>
+      {homepageArticles.map(homepage =>(
+        <li key={homepage.id}>
+          <Link to={`/homepage/${homepage.id}`}>
+            <h2>{homepage.title}</h2>
           </Link>
-          <p>{upperArticle.descrip}</p>
+          <p>{homepage.descrip}</p>
         </li>
       ))}
     </ul>

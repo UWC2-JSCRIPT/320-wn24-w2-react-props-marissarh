@@ -1,6 +1,5 @@
 import './App.css'
-import PropTypes from 'prop-types';
-import AuthorPic from './Components/AuthorPic';
+import React from 'react';
 
 
     
@@ -8,7 +7,7 @@ import AuthorPic from './Components/AuthorPic';
         const content = {
             id: match.params.id,
             title:  `Content ${match.params.id}`,
-            discrip: `Content for Article ${match.params.id}`,
+            descrip: `Content for Article ${match.params.id}`,
         };
         
     

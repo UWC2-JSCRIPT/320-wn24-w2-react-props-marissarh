@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import Images from './Images';
-import Picture from '../Content';
+import Content from '../Content';
 import { GoBookmark } from "react-icons/go";
 import AuthorPic from './AuthorPic';
 
-const mainArticles = () =>{
+const Homepage = () =>{
   const [upperArticles, setUpperArticles] = useState([]);
   useEffect(()=>{
     const articles =[{
@@ -26,30 +26,36 @@ const mainArticles = () =>{
     id:1,
     article:{
       articlePicture:'./images/graffiti.avif',
-    title:`Do Something You Can't Win At`,
+      title:`Do Something You Can't Win At`,
     },
-    authPic:"./images/KrisGage.png",
+    author:{  
+      name:'Kris Gage',
+      authPic:"./images/KrisGage.png",},
     descrip:'And make it something you love',
-    author:'Kris Gage',
     length:'3 min read',
     date:'Mar 30',
   },
   {
     id:2,
-    
-    title:`This Handy Chart Automatically Generates a Pitch for Your New Novel`,
+    article:{
+      articlePicture: './images/electricChart.jpg',
+      title:`This Handy Chart Automatically Generates a Pitch for Your New Novel`,},
     descrip:'Feeling stuck? We help you skip the writing and go traight to the press release',
-    authPic:"./images/electricLiterature.jpg",
-    author:'Electric Literature',
+    author:{  
+      author:'Electric Literature',
+      authPic:"./images/electricLiterature.jpg",},
     length:'2 min read',
     date:'Mar 28',
   },
   {
     id:3,
-    title:`Art as a Second Language`,
+    article:{
+      articlePicture:'./images/paddleBall.png',
+      title:`Art as a Second Language`,},
     descrip:'Drawing is a translation of all my voices and words — an attempt to draw nothing',
-    authPic:"./images/RomanMuradov.png",
-    author:'Roman Muradov',
+    author:{
+      author:'Roman Muradov',
+      authPic:"./images/RomanMuradov.png",},
     length:'6 min read',
     date:'Mar 27',}
   ];
@@ -72,7 +78,7 @@ return (
   </div>
 );
       };
-      export default mainArticles
+      export default Homepage
       
   {/*function MainArticles(){
     const mArticlesArray = mArticles.map(article =>

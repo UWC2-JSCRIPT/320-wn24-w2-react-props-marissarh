@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import Images from './Images';
-import Content from '../Content';
+import Content from './Content';
 import { GoBookmark } from "react-icons/go";
 import AuthorPic from './AuthorPic';
 
 const Homepage = () =>{
-  const [homepageArticles, setHomepageArticles] = useState([]);
+  const [articles, setArticles] = useState([]);
+
   useEffect(()=>{
-    const blogArticles =[{
+
+    const blogArticles =[
+      {
       id: 0,
       article:{
         articlePicture: './images/painting.webp'},
@@ -20,6 +22,7 @@ const Homepage = () =>{
         picture:"./images/LouisChew.jpg",},
       length:'8 min read',
       date:'Apr 4',
+      bookmarked: true,
       category: 'For You',
   
     },
@@ -35,6 +38,7 @@ const Homepage = () =>{
     descrip:'And make it something you love',
     length:'3 min read',
     date:'Mar 30',
+    bookmarked: true,
     category: 'For You',
   },
   {
@@ -48,6 +52,7 @@ const Homepage = () =>{
       authPic:"./images/electricLiterature.jpg",},
     length:'2 min read',
     date:'Mar 28',
+    bookmarked: true,
     category: 'For You',
   },
   {
@@ -61,6 +66,7 @@ const Homepage = () =>{
       authPic:"./images/RomanMuradov.png",},
     length:'6 min read',
     date:'Mar 27',
+    bookmarked: true,
     category: 'For You',
   },{
     id:4,
@@ -72,7 +78,8 @@ const Homepage = () =>{
       author:'Alex Mathers', 
       authPic:"./images/AlexMathers.jpg",},
     length:'3 min read',    
-    date:'Apr 22',  
+    date:'Apr 22', 
+    bookmarked: true, 
     category: 'In Case You Missed It',   
   },{
     id:5,
@@ -84,6 +91,7 @@ const Homepage = () =>{
         authPic:"./images/ZdravkoCivjetic.jpg",},
     length:'6 min read',
     date:'Apr 22',
+    bookmarked: true,
     category: 'In Case You Missed It',  
   },{
     id:6,
@@ -97,53 +105,47 @@ const Homepage = () =>{
     },
     length:'8 min read',
     date:'Apr 21',
+    bookmarked: true,
     category: 'In Case You Missed It', 
   }
   ];
-  setHomepageArticles(blogArticles);
+  setArticles(blogArticles);
   }, [])
 
 return (
   <div>
+    <section>
     <h1> For You</h1>
+    {renderArticlesByCategory ('For You')}
+    </section>
+    <section>
+      <h3>In Case You Missed It</h3>
+      {renderArticlesByCategory('In Case You Missed It')}
+      </section>
+      </div>);
+
+
+function renderArticlesByCategory(category){
+  const filteredArticles = articles.filter(article => article.category === category);
+  return(
     <ul>
-      {homepageArticles.map(homepage =>(
-        <li key={homepage.id}>
-          <Link to={`/homepage/${homepage.id}`}>
-            <h2>{homepage.title}</h2>
-          </Link>
-          <p>{homepage.descrip}</p>
+      {filteredArticles.map(article => (
+        <li key={article.id}>
+        <li>{`${article}`}</li> 
+            <h2>{article.title}</h2>
+            <p>{article.articlePicture}</p>
+          
+          <p>{article.descrip}</p>
+          <p>{article.author.name}</p>
+          <p>{article.date}</p>
+          <p>{article.length}</p>
+          <button>{article.bookmarked ? 'Remove Bookmark' : 'Bookmark'}</button>
         </li>
       ))}
     </ul>
-  </div>
-);
-      };
+  );
+      }
+};
       export default Homepage
       
-  {/*function MainArticles(){
-    const mArticlesArray = mArticles.map(article =>
-        <li className='border border-grey ' key={article.id}>
-          <h2 className='font-bold'>{article.title}</h2>
-          <p className='text-slate-500'>{article.descrip}</p>
-          
-          <br />
-          <h3>{article.author}</h3>
-          <div className='grid grid-cols-6 gap-5'> 
-          <h4 className='text-slate-500  '>{article.length}</h4>
-          <h4 className='text-slate-500  '>{article.date}</h4>
-          <GoBookmark />
-          </div>
-          </li>
-    )
-
-return (
-<>
-<ul className='grid grid-cols-2 gap-4 pt-10 '> {mArticlesArray}</ul>
-</>
-
-)
-
-}*/}
-
-
+ 
